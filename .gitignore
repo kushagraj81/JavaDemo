@@ -1,3 +1,7 @@
+/out/
+*/out/**
+/resources/
+*/resources/**
 /target/
 */target/**
 **/META-INF/

@@ -6,6 +6,7 @@ public class Loops {
     {
         System.out.println("inside Loops class");
     }
+
     public void printCount()
     {
         for(int i=0;i<10;i++)

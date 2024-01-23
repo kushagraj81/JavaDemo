@@ -8,10 +8,8 @@ public class ThreadDemo {
 //        This start method invokes the run() method of a thread or its child class.
         taskRunner.start();
         System.out.println("Hello kushagra....");
-        for(int i=0;i<1000;i++)
-        {
-            System.out.println("Number In Main: " + i);
-        }
+        Task taskRunner2= new Task();
+        taskRunner2.start();
     }
 }
 class Task extends Thread{

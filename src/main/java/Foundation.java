@@ -8,6 +8,8 @@ public class Foundation{
         obj.printCount();
         Loops obj2 = new Loops();
         obj2.printCount();
+
+
     }
 
 }

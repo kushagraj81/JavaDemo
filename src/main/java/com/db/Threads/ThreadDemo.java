@@ -21,7 +21,7 @@ class Task extends Thread{
     {
         for(int i=0;i<1000;i++)
         {
-            System.out.println("Number In Thread: " + i);
+            System.out.println("Number In Thread: " + i + "Thread name : " + Thread.currentThread().getName()) ;
         }
     }
 }

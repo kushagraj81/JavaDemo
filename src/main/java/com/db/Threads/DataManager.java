@@ -1,9 +1,10 @@
 package com.db.Threads;
 
 import java.util.ArrayList;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class DataManager  {
-    ArrayList<Integer> arr=new ArrayList<Integer>();
+    CopyOnWriteArrayList<Integer> arr=new CopyOnWriteArrayList<>();
     public void addDataToDB()
     {
         for(int i=0;i<1000;i++)

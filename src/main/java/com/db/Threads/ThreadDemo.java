@@ -31,10 +31,10 @@ public class ThreadDemo {
             }
         });
         thread1.start();
-//        this part of code tells the main thread to wait until thread1 joins it i.e completes itself.
-//        this will avoid concurrent access problem.
+//        thread1 enters data for 2 seconds so that thread2 gets some data to pull
+//        this time it pulls the data and ends and we don't see concurrent access issue.
         try {
-            thread1.join();
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

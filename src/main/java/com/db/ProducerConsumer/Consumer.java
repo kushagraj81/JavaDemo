@@ -1,10 +1,11 @@
 package com.db.ProducerConsumer;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Consumer implements Runnable {
-    ArrayList<Integer> arr;
-    public Consumer(ArrayList<Integer> arr)
+    List<Integer> arr=null;
+    public Consumer(List<Integer> arr)
     {
         this.arr=arr;
     }
@@ -20,7 +21,8 @@ public class Consumer implements Runnable {
         }
         synchronized (arr)
         {
-            System.out.println("Producer added question : " + arr.remove(0));
+            System.out.println("Consumer solved question : " + arr.remove(0));
+            Thread.sleep(5000);
             arr.notify();
         }
 

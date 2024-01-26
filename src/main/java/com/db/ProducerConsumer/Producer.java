@@ -1,12 +1,13 @@
 package com.db.ProducerConsumer;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Producer implements Runnable {
     final int LIMIT=6;
     private int questionNumber=0;
-    ArrayList<Integer> arr;
-    public Producer(ArrayList<Integer> arr)
+    List<Integer> arr=null;
+    public Producer(List<Integer> arr)
     {
         this.arr=arr;
     }
@@ -25,7 +26,6 @@ public class Producer implements Runnable {
             arr.add(questionNumber);
             System.out.println("Producer added question : " + questionNumber);
             arr.notify();
-
         }
 
     }
